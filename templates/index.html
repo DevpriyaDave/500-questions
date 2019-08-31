@@ -1,0 +1,32 @@
+{% extends "template.html" %}
+
+
+{% block body %}
+
+<div class="row" xmlns="http://www.w3.org/1999/html">
+  <div class="col-12">
+    <h1>500 questions</h1>
+  </div>
+  <div class="col-12">
+    <form action="/getquestion" method="get">
+      <div class="form-group">
+        <button>Pick One</button>
+      </div>
+    </form>
+  </div>
+</div>
+<br>
+{{value}}
+  <div class="col-12">
+    <form action="/donequestion" method="post">
+      <div class="form-group">
+        <button>Done</button>
+      </div>
+    </form>
+  </div>
+
+
+<br>
+
+
+{% endblock %}
